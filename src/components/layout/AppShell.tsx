@@ -16,15 +16,15 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: 'Overview',           route: '/dashboard',      icon: LayoutDashboard },
-  { label: 'GIS Intelligence',   route: '/map',            icon: Map },
-  { label: 'Sensor Registry',    route: '/sensors',        icon: RadioTower },
-  { label: 'Integrity Incidents',route: '/incidents',      icon: ShieldAlert },
-  { label: 'Scenario Lab',       route: '/scenario-lab',   icon: FlaskConical },
-  { label: 'Decision Delta',     route: '/decision-delta', icon: GitCompare },
-  { label: 'Evidence Center',    route: '/evidence',       icon: FileCheck },
-  { label: 'SOC Integration',    route: '/soc',            icon: ShieldCheck },
-  { label: 'Settings',           route: '/settings',       icon: Settings },
+  { label: 'Overview', route: '/dashboard', icon: LayoutDashboard },
+  { label: 'GIS Intelligence', route: '/map', icon: Map },
+  { label: 'Sensor Registry', route: '/sensors', icon: RadioTower },
+  { label: 'Integrity Incidents', route: '/incidents', icon: ShieldAlert },
+  { label: 'Scenario Lab', route: '/scenario-lab', icon: FlaskConical },
+  { label: 'Decision Delta', route: '/decision-delta', icon: GitCompare },
+  { label: 'Evidence Center', route: '/evidence', icon: FileCheck },
+  { label: 'SOC Integration', route: '/soc', icon: ShieldCheck },
+  { label: 'Settings', route: '/settings', icon: Settings },
 ];
 
 export default function AppShell() {
@@ -98,7 +98,7 @@ export default function AppShell() {
           {!collapsed && (
             <div>
               <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 1 }}>
-                EcoTruth
+                TerraCare
               </div>
               <div style={{ fontSize: '0.65rem', color: 'var(--text-secondary)', marginTop: 2 }}>
                 Environmental Integrity

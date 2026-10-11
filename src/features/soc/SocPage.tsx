@@ -131,7 +131,7 @@ export default function SocPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {[
               { label: 'SIEM Adapter', value: 'Not configured', status: 'unknown' },
-              { label: 'Event Schema', value: 'EcoTruth v1.0', status: 'normal' },
+              { label: 'Event Schema', value: 'TerraCare v1.0', status: 'normal' },
               { label: 'Auth Method', value: 'API key (backend only)', status: 'normal' },
               { label: 'Webhook URL', value: 'Not set', status: 'unknown' },
               { label: 'Alert Forwarding', value: 'Disabled', status: 'unknown' },
@@ -152,7 +152,7 @@ export default function SocPage() {
       <div className="card-inset" style={{ padding: 14, marginTop: 16, display: 'flex', gap: 10 }}>
         <Info size={16} color="var(--accent)" style={{ flexShrink: 0, marginTop: 2 }} />
         <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-          <strong style={{ color: 'var(--text-primary)' }}>To enable SOC integration:</strong> Configure a compatible SIEM adapter on the backend and set the EcoTruth SOC endpoint.
+          <strong style={{ color: 'var(--text-primary)' }}>To enable SOC integration:</strong> Configure a compatible SIEM adapter on the backend and set the TerraCare SOC endpoint.
           The frontend will reflect the actual connection state. No credentials or model configuration are stored here.
           All consequential operations (isolation, blocking, response actions) require explicit analyst authorization from the backend.
         </div>

@@ -135,9 +135,9 @@ export default function SettingsPage() {
       <div className="card-inset" style={{ marginTop: 16, padding: 14, display: 'flex', gap: 10 }}>
         <Info size={16} color="var(--accent)" style={{ flexShrink: 0, marginTop: 2 }} />
         <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-          <div style={{ marginBottom: 4 }}><strong>EcoTruth</strong> v{APP_VERSION} — Environmental Data Integrity Platform</div>
+          <div style={{ marginBottom: 4 }}><strong>TerraCare</strong> v{APP_VERSION} — Environmental Data Integrity Platform</div>
           <div>Settings are stored in <code>localStorage</code> only and are not persisted to a backend.
-          No API keys or credentials are stored in this frontend. All sensor data shown is synthetic.</div>
+            No API keys or credentials are stored in this frontend. All sensor data shown is synthetic.</div>
         </div>
       </div>
     </div>

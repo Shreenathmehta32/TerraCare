@@ -10,13 +10,13 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue>({
   theme: 'dark',
-  toggleTheme: () => {},
+  toggleTheme: () => { },
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     try {
-      const stored = localStorage.getItem('ecotruth-theme');
+      const stored = localStorage.getItem('TerraCare-theme');
       if (stored === 'light' || stored === 'dark') return stored;
     } catch { /* ignore */ }
     return 'dark';
@@ -24,7 +24,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    try { localStorage.setItem('ecotruth-theme', theme); } catch { /* ignore */ }
+    try { localStorage.setItem('TerraCare-theme', theme); } catch { /* ignore */ }
   }, [theme]);
 
   const toggleTheme = () => setTheme(t => (t === 'dark' ? 'light' : 'dark'));
